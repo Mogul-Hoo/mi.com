@@ -1,0 +1,481 @@
+.top-pic{
+    display: block;
+    width: 100%;
+    height: 120px;
+    background:url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bb3c06a430689ba2357dd7d1fbfa6bab.jpg?w=5120&h=240);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: auto 120px;
+    text-indent: -9999px;
+}
+.top-nav{
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    background-color: #333;
+    font-size: 12px;
+    text-align: center;
+    color: #b0b0b0;
+    & a{
+        color: #b0b0b0;
+    }
+    & .top-nav-left{
+        float: left;
+        height: 40px;
+        
+        &>a{
+            display: inline-block;
+        }
+        &>a:hover {
+            color: #fff;
+        }
+        &>span{
+            margin: 0.25em;
+            color: #424242;
+        }
+        &>.download-app{
+            position: relative;
+            &>.pic{
+                background-color: #fff;
+                position: absolute;
+                top: 40px;
+                left: -37px;
+                width: 124px;
+                color: #333;
+                font-size: 14px;
+                overflow: hidden;
+                box-shadow: 0 1px 5px #aaa;
+                height: 0px;
+                transition: all .3s;
+                &>img{
+                    display: block;
+                    width: 90px;
+                    height: 90px;
+                    margin: 18px auto 5px;
+                }
+            }
+            &:hover>.pic{
+                z-index: 20;
+                height: 153px;
+            }
+            
+        }
+    }
+    & .top-nav-car{
+        position: relative;
+        float: right;
+        width: 120px;
+        height: 40px;
+        background-color:#424242;
+        margin-left: 20px;
+        &>a{
+            display: block;
+            color: #fff;
+        }
+        &>.shop{
+            position: absolute;
+            top: 40px;
+            right: 0;
+            width: 316px;
+            height: 0px;
+            background-color: #fff;
+            overflow: hidden;
+            transition: all .5s;
+        }
+        &:hover{
+            background-color: #fff;
+            &>a{
+                color: #ff6700;
+            }
+            &>.shop{
+                z-index: 20;
+                height: 100px;
+            }
+        }
+    }
+    & .top-nav-right{
+        float: right;
+        font-size: 12px;
+        height: 40px;
+        &>a{
+            display: inline-block;
+        }
+        &>a:hover {
+            color: #fff;
+        }
+        &>span{
+            margin: 0.25em;
+            color: #424242;
+        }
+    }
+}
+.bottom-nav{
+    height: 100px;
+    font-size: 16px;
+    position: relative;
+    & .bottom-nav-left{
+       float: left;
+       margin-top: 22px;
+       &>a{
+        display: block;
+        width: 55px;
+        height: 55px;
+        background-color: #ff6700;
+        position: relative;
+        overflow: hidden;
+        &::before,&::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 55px;
+            height: 55px;
+            transition: all 0.2s;
+        }
+        &::before{
+            background:url(https://s02.mifile.cn/assets/static/image/mi-logo.png) no-repeat 50% 50%;
+        }
+        &::after{
+            background:url(https://s02.mifile.cn/assets/static/image/mi-home.png) no-repeat 50% 50%;
+            margin-left: -55px;
+        }
+        &:hover{
+            &::before{
+                margin-left: 55px;
+            }
+            &::after{
+                margin-left: 0;
+            }
+        }
+       } 
+    }
+    & .bottom-nav-middle{
+        float: left;
+        margin-left: 190px;
+        
+        &>a{
+            display: inline-block;
+            line-height: 100px;
+            padding: 0  7px;
+            color: #333;
+            overflow: hidden;
+            &:hover>.box{
+                height: 230px;
+            }
+            &:hover{
+                color: #ff6700;
+            }
+            &>.box{
+                position: absolute;
+                left: 0;
+                top: 100px;
+                width: 100%;
+                height: 0;
+                background-color: rgb(91, 117, 51);
+                transition: height .5s;
+            }
+        }
+        
+    }
+    & .bottom-nav-right{
+        float: right;
+        line-height: 100px;
+        &>form{
+            margin-top: 25px;
+        }
+        & input{
+            float: left;
+            outline: none;
+            border: 1px solid #e0e0e0;
+            right: 51px;
+            z-index: 1;
+            width: 223px;
+            height: 48px;
+            padding: 0 10px;
+            font-size: 14px;
+            line-height: 48px;
+        }
+        & button{
+            float: right;
+            right: 0;
+            width: 52px;
+            height: 48px;
+            font-size: 24px;
+            line-height: 24px;
+            background-color: #fff;
+            color: #616161;
+            border: 1px solid #e0e0e0;
+            outline: 0;
+        }
+    }
+}
+header>.main-nav{
+    & div{
+        height: 460px;
+        background-color:black;
+    }
+}
+.top-item{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    // background-color: pink;
+    &>.wrapper{
+        display: flex;
+        height: 170px;
+    }
+    & .item-1{
+        width: 234px;
+        background-color: #5f5750;
+        font-size: 12px;
+        & li{
+            float: left;
+            &>a{
+                display: block;
+                width: 76px;
+                height: 67px;
+                text-align: center;
+                color: #fff;
+                opacity: 0.7;
+                transition: opacity 0.2s;
+                &>div{
+                    margin-top: 18px;
+                    font-size: 24px;
+                    margin-bottom: 5px;
+                }
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    & .item-2,& .item-3,& .item-4{
+        width: 316px;
+        margin-left: 15px;
+        &:hover{
+            box-shadow: 0 15px 30px rgba(0,0,0,.1);
+        }
+        &>a{
+            display: block;
+            &>img{
+                width: 316px;
+                height: 170px;
+            }
+        }
+    }
+}
+main{
+    background-color: #f5f5f5;
+    &>.mian-quickshop{
+        & h2{
+            float: left;
+            height: 58px;
+            line-height: 58px;
+        }
+        & .select{
+            float: right;
+            margin-top: 24px;
+            &>.left{
+                border-right: 0;
+            }
+            &>span{
+                display: inline-block;
+                width: 36px;
+                height: 24;
+                border: 1px solid #e0e0e0;
+                text-align: center;
+                line-height: 24px;
+                color: #b0b0b0;
+                cursor: pointer;
+                &:hover{
+                    color: #ff6700;
+                }
+            }
+        }
+        &>.timer{
+            height: 340px;
+            display: flex;
+            text-align: center;
+            &>div{
+                margin-left: 14px;
+                width: 234px;
+                height: 300px;
+                padding-top: 39px;
+                border-top: 1px solid red;
+            }
+            &>.count{
+                margin-left: 0;
+                background:#f1eded;
+                &>div:nth-of-type(1){
+                    color: #ef3a3b;
+                    font-size: 21px;
+                    padding-top: 15px;
+                }
+                &>div:nth-of-type(2){
+                    margin: 25px auto;
+                }
+                &>span{
+                    font-size: 15px;
+                    color: rgba(0,0,0,.54);
+                }
+                &>div:nth-of-type(3){
+                    margin: 28px auto 0;
+                    font-size: 24px;
+                    &>span{
+                        display: inline-block;
+                        width: 46px;
+                        height: 46px;
+                        background: #605751;
+                        color: #fff;
+                        line-height: 46px;
+                    }
+                }
+            }
+            &>.product{
+                background: #fff;
+                &>.content{
+                    display: block;
+                    &>.picture{
+                        margin: 0 auto 22px;
+                        &>img{
+                            width: 160px;
+                            height: 160px;
+                            font-size: 0;
+                        }
+                    }
+                    &>h3{
+                        margin: 0 20px 3px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #212121;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    &>.desc{
+                        height: 18px;
+                        margin: 0 20px 12px;
+                        font-size: 12px;
+                        color: #b0b0b0;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    &>.price{
+                        color: #ff6700;
+                        &>del{
+                            color: #b0b0b0;
+                        }
+                    }
+                }
+            }
+        }
+        &>.note9{
+            height: 120px;
+            margin: 22px 0;
+            &>a{
+                display: block;
+            }
+        }
+    }
+    &>.main-phone{
+        &>.title{
+            height: 58px;
+            &>h2{
+                float: left;
+                line-height: 58px;
+            }
+            &>.more{
+                float: right;
+                line-height: 58px;
+                &>a{
+                font-size: 16px;
+                color: #424242;
+                &>span{
+                    font-size: 20px;
+                  }
+                &:hover{
+                    color: #ff6700;
+                  }
+                }
+                
+            }
+        }
+        &>.telephone{
+            height: 614px;
+            display: flex;
+            &>.left:hover{
+                box-shadow: 0 15px 30px rgba(0,0,0,.1);
+                transform: translate3d(0,-2px,0);
+            }
+            &>.left{
+                transition: all 0.5s;
+            }
+            &>.left>a{
+              display: block;
+              &>img{
+                  width: 234px;
+                  height: 614px;
+              }
+            }
+            &>.right{
+                &>ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 992px;
+                }
+                &>ul>li{
+                    width: 234px;
+                    height: 260px;
+                    margin: 0 0 14px 14px;
+                    padding: 20px 0;
+                    text-align: center;
+                    background-color: #fff;
+                    transition: all 0.5s;
+                    &:hover{
+                        box-shadow: 0 15px 30px rgba(0,0,0,.1);
+                        transform: translate3d(0,-2px,0);
+                    }
+                    &>a{
+                        display: block;
+                        &>.picture{
+                            margin: 0 auto 18px;
+                            font-size: 0;
+                            &>img{
+                                width: 160px;
+                                height: 160px;
+                            }
+                        }
+                        &>h3{
+                            font-weight: 400;
+                            color: #333;
+                            margin: 0 10px 2px;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+                        &>.desc{
+                            margin: 0 10px 10px;
+                            height: 18px;
+                            font-size: 12px;
+                            color: #b0b0b0;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+                        &>.price{
+                            margin: 0 10px 14px;
+                            color: #ff6700;
+                        }
+                    }
+                }
+            }
+        }
+        &>.Redmi{
+            height: 120px;
+            margin: 22px 0;
+            &>a{
+                display: block;
+            } 
+        }
+    }
+}

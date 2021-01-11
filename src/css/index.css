@@ -1,0 +1,474 @@
+.top-pic {
+  display: block;
+  width: 100%;
+  height: 120px;
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bb3c06a430689ba2357dd7d1fbfa6bab.jpg?w=5120&h=240);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: auto 120px;
+  text-indent: -9999px;
+}
+.top-nav {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  background-color: #333;
+  font-size: 12px;
+  text-align: center;
+  color: #b0b0b0;
+}
+.top-nav a {
+  color: #b0b0b0;
+}
+.top-nav .top-nav-left {
+  float: left;
+  height: 40px;
+}
+.top-nav .top-nav-left > a {
+  display: inline-block;
+}
+.top-nav .top-nav-left > a:hover {
+  color: #fff;
+}
+.top-nav .top-nav-left > span {
+  margin: 0.25em;
+  color: #424242;
+}
+.top-nav .top-nav-left > .download-app {
+  position: relative;
+}
+.top-nav .top-nav-left > .download-app > .pic {
+  background-color: #fff;
+  position: absolute;
+  top: 40px;
+  left: -37px;
+  width: 124px;
+  color: #333;
+  font-size: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 5px #aaa;
+  height: 0px;
+  transition: all 0.3s;
+}
+.top-nav .top-nav-left > .download-app > .pic > img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin: 18px auto 5px;
+}
+.top-nav .top-nav-left > .download-app:hover > .pic {
+  z-index: 20;
+  height: 153px;
+}
+.top-nav .top-nav-car {
+  position: relative;
+  float: right;
+  width: 120px;
+  height: 40px;
+  background-color: #424242;
+  margin-left: 20px;
+}
+.top-nav .top-nav-car > a {
+  display: block;
+  color: #fff;
+}
+.top-nav .top-nav-car > .shop {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 316px;
+  height: 0px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.top-nav .top-nav-car:hover {
+  background-color: #fff;
+}
+.top-nav .top-nav-car:hover > a {
+  color: #ff6700;
+}
+.top-nav .top-nav-car:hover > .shop {
+  z-index: 20;
+  height: 100px;
+}
+.top-nav .top-nav-right {
+  float: right;
+  font-size: 12px;
+  height: 40px;
+}
+.top-nav .top-nav-right > a {
+  display: inline-block;
+}
+.top-nav .top-nav-right > a:hover {
+  color: #fff;
+}
+.top-nav .top-nav-right > span {
+  margin: 0.25em;
+  color: #424242;
+}
+.bottom-nav {
+  height: 100px;
+  font-size: 16px;
+  position: relative;
+}
+.bottom-nav .bottom-nav-left {
+  float: left;
+  margin-top: 22px;
+}
+.bottom-nav .bottom-nav-left > a {
+  display: block;
+  width: 55px;
+  height: 55px;
+  background-color: #ff6700;
+  position: relative;
+  overflow: hidden;
+}
+.bottom-nav .bottom-nav-left > a::before,
+.bottom-nav .bottom-nav-left > a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  transition: all 0.2s;
+}
+.bottom-nav .bottom-nav-left > a::before {
+  background: url(https://s02.mifile.cn/assets/static/image/mi-logo.png) no-repeat 50% 50%;
+}
+.bottom-nav .bottom-nav-left > a::after {
+  background: url(https://s02.mifile.cn/assets/static/image/mi-home.png) no-repeat 50% 50%;
+  margin-left: -55px;
+}
+.bottom-nav .bottom-nav-left > a:hover::before {
+  margin-left: 55px;
+}
+.bottom-nav .bottom-nav-left > a:hover::after {
+  margin-left: 0;
+}
+.bottom-nav .bottom-nav-middle {
+  float: left;
+  margin-left: 190px;
+}
+.bottom-nav .bottom-nav-middle > a {
+  display: inline-block;
+  line-height: 100px;
+  padding: 0  7px;
+  color: #333;
+  overflow: hidden;
+}
+.bottom-nav .bottom-nav-middle > a:hover > .box {
+  height: 230px;
+}
+.bottom-nav .bottom-nav-middle > a:hover {
+  color: #ff6700;
+}
+.bottom-nav .bottom-nav-middle > a > .box {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  height: 0;
+  background-color: #5b7533;
+  transition: height 0.5s;
+}
+.bottom-nav .bottom-nav-right {
+  float: right;
+  line-height: 100px;
+}
+.bottom-nav .bottom-nav-right > form {
+  margin-top: 25px;
+}
+.bottom-nav .bottom-nav-right input {
+  float: left;
+  outline: none;
+  border: 1px solid #e0e0e0;
+  right: 51px;
+  z-index: 1;
+  width: 223px;
+  height: 48px;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 48px;
+}
+.bottom-nav .bottom-nav-right button {
+  float: right;
+  right: 0;
+  width: 52px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 24px;
+  background-color: #fff;
+  color: #616161;
+  border: 1px solid #e0e0e0;
+  outline: 0;
+}
+header > .main-nav div {
+  height: 460px;
+  background-color: black;
+}
+.top-item {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.top-item > .wrapper {
+  display: flex;
+  height: 170px;
+}
+.top-item .item-1 {
+  width: 234px;
+  background-color: #5f5750;
+  font-size: 12px;
+}
+.top-item .item-1 li {
+  float: left;
+}
+.top-item .item-1 li > a {
+  display: block;
+  width: 76px;
+  height: 67px;
+  text-align: center;
+  color: #fff;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.top-item .item-1 li > a > div {
+  margin-top: 18px;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.top-item .item-1 li > a:hover {
+  opacity: 1;
+}
+.top-item .item-2,
+.top-item .item-3,
+.top-item .item-4 {
+  width: 316px;
+  margin-left: 15px;
+}
+.top-item .item-2:hover,
+.top-item .item-3:hover,
+.top-item .item-4:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.top-item .item-2 > a,
+.top-item .item-3 > a,
+.top-item .item-4 > a {
+  display: block;
+}
+.top-item .item-2 > a > img,
+.top-item .item-3 > a > img,
+.top-item .item-4 > a > img {
+  width: 316px;
+  height: 170px;
+}
+main {
+  background-color: #f5f5f5;
+}
+main > .mian-quickshop h2 {
+  float: left;
+  height: 58px;
+  line-height: 58px;
+}
+main > .mian-quickshop .select {
+  float: right;
+  margin-top: 24px;
+}
+main > .mian-quickshop .select > .left {
+  border-right: 0;
+}
+main > .mian-quickshop .select > span {
+  display: inline-block;
+  width: 36px;
+  height: 24;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  line-height: 24px;
+  color: #b0b0b0;
+  cursor: pointer;
+}
+main > .mian-quickshop .select > span:hover {
+  color: #ff6700;
+}
+main > .mian-quickshop > .timer {
+  height: 340px;
+  display: flex;
+  text-align: center;
+}
+main > .mian-quickshop > .timer > div {
+  margin-left: 14px;
+  width: 234px;
+  height: 300px;
+  padding-top: 39px;
+  border-top: 1px solid red;
+}
+main > .mian-quickshop > .timer > .count {
+  margin-left: 0;
+  background: #f1eded;
+}
+main > .mian-quickshop > .timer > .count > div:nth-of-type(1) {
+  color: #ef3a3b;
+  font-size: 21px;
+  padding-top: 15px;
+}
+main > .mian-quickshop > .timer > .count > div:nth-of-type(2) {
+  margin: 25px auto;
+}
+main > .mian-quickshop > .timer > .count > span {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.54);
+}
+main > .mian-quickshop > .timer > .count > div:nth-of-type(3) {
+  margin: 28px auto 0;
+  font-size: 24px;
+}
+main > .mian-quickshop > .timer > .count > div:nth-of-type(3) > span {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background: #605751;
+  color: #fff;
+  line-height: 46px;
+}
+main > .mian-quickshop > .timer > .product {
+  background: #fff;
+}
+main > .mian-quickshop > .timer > .product > .content {
+  display: block;
+}
+main > .mian-quickshop > .timer > .product > .content > .picture {
+  margin: 0 auto 22px;
+}
+main > .mian-quickshop > .timer > .product > .content > .picture > img {
+  width: 160px;
+  height: 160px;
+  font-size: 0;
+}
+main > .mian-quickshop > .timer > .product > .content > h3 {
+  margin: 0 20px 3px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #212121;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+main > .mian-quickshop > .timer > .product > .content > .desc {
+  height: 18px;
+  margin: 0 20px 12px;
+  font-size: 12px;
+  color: #b0b0b0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+main > .mian-quickshop > .timer > .product > .content > .price {
+  color: #ff6700;
+}
+main > .mian-quickshop > .timer > .product > .content > .price > del {
+  color: #b0b0b0;
+}
+main > .mian-quickshop > .note9 {
+  height: 120px;
+  margin: 22px 0;
+}
+main > .mian-quickshop > .note9 > a {
+  display: block;
+}
+main > .main-phone > .title {
+  height: 58px;
+}
+main > .main-phone > .title > h2 {
+  float: left;
+  line-height: 58px;
+}
+main > .main-phone > .title > .more {
+  float: right;
+  line-height: 58px;
+}
+main > .main-phone > .title > .more > a {
+  font-size: 16px;
+  color: #424242;
+}
+main > .main-phone > .title > .more > a > span {
+  font-size: 20px;
+}
+main > .main-phone > .title > .more > a:hover {
+  color: #ff6700;
+}
+main > .main-phone > .telephone {
+  height: 614px;
+  display: flex;
+}
+main > .main-phone > .telephone > .left:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -2px, 0);
+}
+main > .main-phone > .telephone > .left {
+  transition: all 0.5s;
+}
+main > .main-phone > .telephone > .left > a {
+  display: block;
+}
+main > .main-phone > .telephone > .left > a > img {
+  width: 234px;
+  height: 614px;
+}
+main > .main-phone > .telephone > .right > ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 992px;
+}
+main > .main-phone > .telephone > .right > ul > li {
+  width: 234px;
+  height: 260px;
+  margin: 0 0 14px 14px;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+main > .main-phone > .telephone > .right > ul > li:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -2px, 0);
+}
+main > .main-phone > .telephone > .right > ul > li > a {
+  display: block;
+}
+main > .main-phone > .telephone > .right > ul > li > a > .picture {
+  margin: 0 auto 18px;
+  font-size: 0;
+}
+main > .main-phone > .telephone > .right > ul > li > a > .picture > img {
+  width: 160px;
+  height: 160px;
+}
+main > .main-phone > .telephone > .right > ul > li > a > h3 {
+  font-weight: 400;
+  color: #333;
+  margin: 0 10px 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+main > .main-phone > .telephone > .right > ul > li > a > .desc {
+  margin: 0 10px 10px;
+  height: 18px;
+  font-size: 12px;
+  color: #b0b0b0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+main > .main-phone > .telephone > .right > ul > li > a > .price {
+  margin: 0 10px 14px;
+  color: #ff6700;
+}
+main > .main-phone > .Redmi {
+  height: 120px;
+  margin: 22px 0;
+}
+main > .main-phone > .Redmi > a {
+  display: block;
+}
