@@ -369,7 +369,7 @@ main{
                 }
             }
         }
-        &>.note9{
+        &>.small-banner{
             height: 120px;
             margin: 22px 0;
             &>a{
@@ -380,13 +380,12 @@ main{
     &>.main-phone{
         &>.title{
             height: 58px;
+            line-height: 58px;
             &>h2{
                 float: left;
-                line-height: 58px;
             }
             &>.more{
                 float: right;
-                line-height: 58px;
                 &>a{
                 font-size: 16px;
                 color: #424242;
@@ -400,7 +399,7 @@ main{
                 
             }
         }
-        &>.telephone{
+        &>.product{
             height: 614px;
             display: flex;
             &>.left:hover{
@@ -470,7 +469,106 @@ main{
                 }
             }
         }
-        &>.Redmi{
+        &>.small-banner{
+            height: 120px;
+            margin: 22px 0;
+            &>a{
+                display: block;
+            } 
+        }
+    }
+    &>.main-appliances,&>.main-smart, &>.main-match,&>.main-acce,&>.main-rim{
+        &>.title{
+            height: 58px;
+            line-height: 58px;
+            &>h2{
+                float: left;
+            }
+            &>.more{
+                float: right;
+                &>a{
+                    display: inline-block;
+                    margin:0 0 0 30px;
+                    font-size: 16px;
+                    color: #424242;
+                    &:hover{
+                        color: #ff6700;
+                        border-bottom: 1px solid #ff6700;
+                    }
+                }
+            }
+        }
+        &>.product{
+            display: flex;
+            &>.left{
+                &>div{
+                    width: 234px;
+                    height: 300px;
+                    margin-bottom: 14px;
+                    transition: all .5s;
+                    &:hover{
+                        box-shadow: 0 15px 30px rgba(0,0,0,.1);
+                        transform: translate3d(0,-2px,0);
+                    }
+                    &>a{
+                        display: block;
+                    }
+                }
+            }
+            &>.right{
+                &>ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 992px;
+                    &>li{
+                        width: 234px;
+                        height: 260px;
+                        padding: 20px 0;
+                        background-color: #fff;
+                        margin: 0 0 14px 14px;
+                        text-align: center;
+                        transition: all .5s;
+                        &:hover{
+                            box-shadow: 0 15px 30px rgba(0,0,0,.1);
+                            transform: translate3d(0,-2px,0);
+                        }
+                        &>a{
+                            display: block;
+                            &>.picture{
+                                margin: 0 auto 18px;
+                                font-size: 0;
+                                &>img{
+                                    width: 160px;
+                                    height: 160px;
+                                } 
+                            }
+                            &>h3{
+                                font-weight: 400;
+                                color: #333;
+                                margin: 0 10px 2px;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                            }
+                            &>.desc{
+                                margin: 0 10px 10px;
+                                height: 18px;
+                                font-size: 12px;
+                                color: #b0b0b0;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                            }
+                            &>.price{
+                                margin: 0 10px 14px;
+                                color: #ff6700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &>.small-banner{
             height: 120px;
             margin: 22px 0;
             &>a{

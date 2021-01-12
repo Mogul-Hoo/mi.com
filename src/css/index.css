@@ -369,23 +369,22 @@ main > .mian-quickshop > .timer > .product > .content > .price {
 main > .mian-quickshop > .timer > .product > .content > .price > del {
   color: #b0b0b0;
 }
-main > .mian-quickshop > .note9 {
+main > .mian-quickshop > .small-banner {
   height: 120px;
   margin: 22px 0;
 }
-main > .mian-quickshop > .note9 > a {
+main > .mian-quickshop > .small-banner > a {
   display: block;
 }
 main > .main-phone > .title {
   height: 58px;
+  line-height: 58px;
 }
 main > .main-phone > .title > h2 {
   float: left;
-  line-height: 58px;
 }
 main > .main-phone > .title > .more {
   float: right;
-  line-height: 58px;
 }
 main > .main-phone > .title > .more > a {
   font-size: 16px;
@@ -397,30 +396,30 @@ main > .main-phone > .title > .more > a > span {
 main > .main-phone > .title > .more > a:hover {
   color: #ff6700;
 }
-main > .main-phone > .telephone {
+main > .main-phone > .product {
   height: 614px;
   display: flex;
 }
-main > .main-phone > .telephone > .left:hover {
+main > .main-phone > .product > .left:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   transform: translate3d(0, -2px, 0);
 }
-main > .main-phone > .telephone > .left {
+main > .main-phone > .product > .left {
   transition: all 0.5s;
 }
-main > .main-phone > .telephone > .left > a {
+main > .main-phone > .product > .left > a {
   display: block;
 }
-main > .main-phone > .telephone > .left > a > img {
+main > .main-phone > .product > .left > a > img {
   width: 234px;
   height: 614px;
 }
-main > .main-phone > .telephone > .right > ul {
+main > .main-phone > .product > .right > ul {
   display: flex;
   flex-wrap: wrap;
   width: 992px;
 }
-main > .main-phone > .telephone > .right > ul > li {
+main > .main-phone > .product > .right > ul > li {
   width: 234px;
   height: 260px;
   margin: 0 0 14px 14px;
@@ -429,22 +428,22 @@ main > .main-phone > .telephone > .right > ul > li {
   background-color: #fff;
   transition: all 0.5s;
 }
-main > .main-phone > .telephone > .right > ul > li:hover {
+main > .main-phone > .product > .right > ul > li:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   transform: translate3d(0, -2px, 0);
 }
-main > .main-phone > .telephone > .right > ul > li > a {
+main > .main-phone > .product > .right > ul > li > a {
   display: block;
 }
-main > .main-phone > .telephone > .right > ul > li > a > .picture {
+main > .main-phone > .product > .right > ul > li > a > .picture {
   margin: 0 auto 18px;
   font-size: 0;
 }
-main > .main-phone > .telephone > .right > ul > li > a > .picture > img {
+main > .main-phone > .product > .right > ul > li > a > .picture > img {
   width: 160px;
   height: 160px;
 }
-main > .main-phone > .telephone > .right > ul > li > a > h3 {
+main > .main-phone > .product > .right > ul > li > a > h3 {
   font-weight: 400;
   color: #333;
   margin: 0 10px 2px;
@@ -452,7 +451,7 @@ main > .main-phone > .telephone > .right > ul > li > a > h3 {
   white-space: nowrap;
   overflow: hidden;
 }
-main > .main-phone > .telephone > .right > ul > li > a > .desc {
+main > .main-phone > .product > .right > ul > li > a > .desc {
   margin: 0 10px 10px;
   height: 18px;
   font-size: 12px;
@@ -461,14 +460,187 @@ main > .main-phone > .telephone > .right > ul > li > a > .desc {
   white-space: nowrap;
   overflow: hidden;
 }
-main > .main-phone > .telephone > .right > ul > li > a > .price {
+main > .main-phone > .product > .right > ul > li > a > .price {
   margin: 0 10px 14px;
   color: #ff6700;
 }
-main > .main-phone > .Redmi {
+main > .main-phone > .small-banner {
   height: 120px;
   margin: 22px 0;
 }
-main > .main-phone > .Redmi > a {
+main > .main-phone > .small-banner > a {
+  display: block;
+}
+main > .main-appliances > .title,
+main > .main-smart > .title,
+main > .main-match > .title,
+main > .main-acce > .title,
+main > .main-rim > .title {
+  height: 58px;
+  line-height: 58px;
+}
+main > .main-appliances > .title > h2,
+main > .main-smart > .title > h2,
+main > .main-match > .title > h2,
+main > .main-acce > .title > h2,
+main > .main-rim > .title > h2 {
+  float: left;
+}
+main > .main-appliances > .title > .more,
+main > .main-smart > .title > .more,
+main > .main-match > .title > .more,
+main > .main-acce > .title > .more,
+main > .main-rim > .title > .more {
+  float: right;
+}
+main > .main-appliances > .title > .more > a,
+main > .main-smart > .title > .more > a,
+main > .main-match > .title > .more > a,
+main > .main-acce > .title > .more > a,
+main > .main-rim > .title > .more > a {
+  display: inline-block;
+  margin: 0 0 0 30px;
+  font-size: 16px;
+  color: #424242;
+}
+main > .main-appliances > .title > .more > a:hover,
+main > .main-smart > .title > .more > a:hover,
+main > .main-match > .title > .more > a:hover,
+main > .main-acce > .title > .more > a:hover,
+main > .main-rim > .title > .more > a:hover {
+  color: #ff6700;
+  border-bottom: 1px solid #ff6700;
+}
+main > .main-appliances > .product,
+main > .main-smart > .product,
+main > .main-match > .product,
+main > .main-acce > .product,
+main > .main-rim > .product {
+  display: flex;
+}
+main > .main-appliances > .product > .left > div,
+main > .main-smart > .product > .left > div,
+main > .main-match > .product > .left > div,
+main > .main-acce > .product > .left > div,
+main > .main-rim > .product > .left > div {
+  width: 234px;
+  height: 300px;
+  margin-bottom: 14px;
+  transition: all 0.5s;
+}
+main > .main-appliances > .product > .left > div:hover,
+main > .main-smart > .product > .left > div:hover,
+main > .main-match > .product > .left > div:hover,
+main > .main-acce > .product > .left > div:hover,
+main > .main-rim > .product > .left > div:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -2px, 0);
+}
+main > .main-appliances > .product > .left > div > a,
+main > .main-smart > .product > .left > div > a,
+main > .main-match > .product > .left > div > a,
+main > .main-acce > .product > .left > div > a,
+main > .main-rim > .product > .left > div > a {
+  display: block;
+}
+main > .main-appliances > .product > .right > ul,
+main > .main-smart > .product > .right > ul,
+main > .main-match > .product > .right > ul,
+main > .main-acce > .product > .right > ul,
+main > .main-rim > .product > .right > ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 992px;
+}
+main > .main-appliances > .product > .right > ul > li,
+main > .main-smart > .product > .right > ul > li,
+main > .main-match > .product > .right > ul > li,
+main > .main-acce > .product > .right > ul > li,
+main > .main-rim > .product > .right > ul > li {
+  width: 234px;
+  height: 260px;
+  padding: 20px 0;
+  background-color: #fff;
+  margin: 0 0 14px 14px;
+  text-align: center;
+  transition: all 0.5s;
+}
+main > .main-appliances > .product > .right > ul > li:hover,
+main > .main-smart > .product > .right > ul > li:hover,
+main > .main-match > .product > .right > ul > li:hover,
+main > .main-acce > .product > .right > ul > li:hover,
+main > .main-rim > .product > .right > ul > li:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -2px, 0);
+}
+main > .main-appliances > .product > .right > ul > li > a,
+main > .main-smart > .product > .right > ul > li > a,
+main > .main-match > .product > .right > ul > li > a,
+main > .main-acce > .product > .right > ul > li > a,
+main > .main-rim > .product > .right > ul > li > a {
+  display: block;
+}
+main > .main-appliances > .product > .right > ul > li > a > .picture,
+main > .main-smart > .product > .right > ul > li > a > .picture,
+main > .main-match > .product > .right > ul > li > a > .picture,
+main > .main-acce > .product > .right > ul > li > a > .picture,
+main > .main-rim > .product > .right > ul > li > a > .picture {
+  margin: 0 auto 18px;
+  font-size: 0;
+}
+main > .main-appliances > .product > .right > ul > li > a > .picture > img,
+main > .main-smart > .product > .right > ul > li > a > .picture > img,
+main > .main-match > .product > .right > ul > li > a > .picture > img,
+main > .main-acce > .product > .right > ul > li > a > .picture > img,
+main > .main-rim > .product > .right > ul > li > a > .picture > img {
+  width: 160px;
+  height: 160px;
+}
+main > .main-appliances > .product > .right > ul > li > a > h3,
+main > .main-smart > .product > .right > ul > li > a > h3,
+main > .main-match > .product > .right > ul > li > a > h3,
+main > .main-acce > .product > .right > ul > li > a > h3,
+main > .main-rim > .product > .right > ul > li > a > h3 {
+  font-weight: 400;
+  color: #333;
+  margin: 0 10px 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+main > .main-appliances > .product > .right > ul > li > a > .desc,
+main > .main-smart > .product > .right > ul > li > a > .desc,
+main > .main-match > .product > .right > ul > li > a > .desc,
+main > .main-acce > .product > .right > ul > li > a > .desc,
+main > .main-rim > .product > .right > ul > li > a > .desc {
+  margin: 0 10px 10px;
+  height: 18px;
+  font-size: 12px;
+  color: #b0b0b0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+main > .main-appliances > .product > .right > ul > li > a > .price,
+main > .main-smart > .product > .right > ul > li > a > .price,
+main > .main-match > .product > .right > ul > li > a > .price,
+main > .main-acce > .product > .right > ul > li > a > .price,
+main > .main-rim > .product > .right > ul > li > a > .price {
+  margin: 0 10px 14px;
+  color: #ff6700;
+}
+main > .main-appliances > .small-banner,
+main > .main-smart > .small-banner,
+main > .main-match > .small-banner,
+main > .main-acce > .small-banner,
+main > .main-rim > .small-banner {
+  height: 120px;
+  margin: 22px 0;
+}
+main > .main-appliances > .small-banner > a,
+main > .main-smart > .small-banner > a,
+main > .main-match > .small-banner > a,
+main > .main-acce > .small-banner > a,
+main > .main-rim > .small-banner > a {
   display: block;
 }
