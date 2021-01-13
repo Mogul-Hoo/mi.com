@@ -1,22 +1,18 @@
+@charset 'utf-8';
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
-
 li {
-    list-style: none;
+  list-style: none;
 }
-
-a,
-ins {
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-
 .wrapper {
-    width: 1226px;
-    margin: 0 auto;
+  width: 1226px;
+  margin: 0 auto;
 }
-
 h1,
 h2,
 h3,
@@ -25,24 +21,20 @@ h5,
 h6,
 strong,
 b {
-    font-weight: normal;
+  font-weight: normal;
 }
-
 i,
 em {
-    font-style: normal;
+  font-style: normal;
 }
-
 .clear::after {
-    content: "";
-    display: block;
-    clear: both;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
-
 body {
-    font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
-    color: #333;
+  font-size: 14px;
 }

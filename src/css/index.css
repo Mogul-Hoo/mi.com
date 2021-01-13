@@ -1,5 +1,44 @@
 @charset 'utf-8';
-.top-pic {
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  width: 1226px;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  font-weight: normal;
+}
+i,
+em {
+  font-style: normal;
+}
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+body {
+  font-size: 14px "微软雅黑";
+}
+header > .top-pic {
   display: block;
   width: 100%;
   height: 120px;
@@ -9,7 +48,7 @@
   background-size: auto 120px;
   text-indent: -9999px;
 }
-.top-nav {
+header > .top-nav {
   height: 40px;
   width: 100%;
   line-height: 40px;
@@ -18,27 +57,27 @@
   text-align: center;
   color: #b0b0b0;
 }
-.top-nav a {
+header > .top-nav a {
   color: #b0b0b0;
 }
-.top-nav .top-nav-left {
+header > .top-nav .top-nav-left {
   float: left;
   height: 40px;
 }
-.top-nav .top-nav-left > a {
+header > .top-nav .top-nav-left > a {
   display: inline-block;
 }
-.top-nav .top-nav-left > a:hover {
+header > .top-nav .top-nav-left > a:hover {
   color: #fff;
 }
-.top-nav .top-nav-left > span {
+header > .top-nav .top-nav-left > span {
   margin: 0.25em;
   color: #424242;
 }
-.top-nav .top-nav-left > .download-app {
+header > .top-nav .top-nav-left > .download-app {
   position: relative;
 }
-.top-nav .top-nav-left > .download-app > .pic {
+header > .top-nav .top-nav-left > .download-app > .pic {
   background-color: #fff;
   position: absolute;
   top: 40px;
@@ -51,17 +90,17 @@
   height: 0px;
   transition: all 0.3s;
 }
-.top-nav .top-nav-left > .download-app > .pic > img {
+header > .top-nav .top-nav-left > .download-app > .pic > img {
   display: block;
   width: 90px;
   height: 90px;
   margin: 18px auto 5px;
 }
-.top-nav .top-nav-left > .download-app:hover > .pic {
+header > .top-nav .top-nav-left > .download-app:hover > .pic {
   z-index: 20;
   height: 153px;
 }
-.top-nav .top-nav-car {
+header > .top-nav .top-nav-car {
   position: relative;
   float: right;
   width: 120px;
@@ -69,11 +108,11 @@
   background-color: #424242;
   margin-left: 20px;
 }
-.top-nav .top-nav-car > a {
+header > .top-nav .top-nav-car > a {
   display: block;
   color: #fff;
 }
-.top-nav .top-nav-car > .shop {
+header > .top-nav .top-nav-car > .shop {
   position: absolute;
   top: 40px;
   right: 0;
@@ -84,41 +123,41 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   transition: all 0.5s;
 }
-.top-nav .top-nav-car:hover {
+header > .top-nav .top-nav-car:hover {
   background-color: #fff;
 }
-.top-nav .top-nav-car:hover > a {
+header > .top-nav .top-nav-car:hover > a {
   color: #ff6700;
 }
-.top-nav .top-nav-car:hover > .shop {
+header > .top-nav .top-nav-car:hover > .shop {
   z-index: 20;
   height: 100px;
 }
-.top-nav .top-nav-right {
+header > .top-nav .top-nav-right {
   float: right;
   font-size: 12px;
   height: 40px;
 }
-.top-nav .top-nav-right > a {
+header > .top-nav .top-nav-right > a {
   display: inline-block;
 }
-.top-nav .top-nav-right > a:hover {
+header > .top-nav .top-nav-right > a:hover {
   color: #fff;
 }
-.top-nav .top-nav-right > span {
+header > .top-nav .top-nav-right > span {
   margin: 0.25em;
   color: #424242;
 }
-.bottom-nav {
+header > .bottom-nav {
   height: 100px;
   font-size: 16px;
   position: relative;
 }
-.bottom-nav .bottom-nav-left {
+header > .bottom-nav .bottom-nav-left {
   float: left;
   margin-top: 22px;
 }
-.bottom-nav .bottom-nav-left > a {
+header > .bottom-nav .bottom-nav-left > a {
   display: block;
   width: 55px;
   height: 55px;
@@ -126,8 +165,8 @@
   position: relative;
   overflow: hidden;
 }
-.bottom-nav .bottom-nav-left > a::before,
-.bottom-nav .bottom-nav-left > a::after {
+header > .bottom-nav .bottom-nav-left > a::before,
+header > .bottom-nav .bottom-nav-left > a::after {
   content: "";
   position: absolute;
   top: 0;
@@ -136,65 +175,65 @@
   height: 55px;
   transition: all 0.2s;
 }
-.bottom-nav .bottom-nav-left > a::before {
+header > .bottom-nav .bottom-nav-left > a::before {
   background: url(https://s02.mifile.cn/assets/static/image/mi-logo.png) no-repeat 50% 50%;
 }
-.bottom-nav .bottom-nav-left > a::after {
+header > .bottom-nav .bottom-nav-left > a::after {
   background: url(https://s02.mifile.cn/assets/static/image/mi-home.png) no-repeat 50% 50%;
   margin-left: -55px;
 }
-.bottom-nav .bottom-nav-left > a:hover::before {
+header > .bottom-nav .bottom-nav-left > a:hover::before {
   margin-left: 55px;
 }
-.bottom-nav .bottom-nav-left > a:hover::after {
+header > .bottom-nav .bottom-nav-left > a:hover::after {
   margin-left: 0;
 }
-.bottom-nav .bottom-nav-middle {
+header > .bottom-nav .bottom-nav-middle {
   float: left;
   margin-left: 190px;
 }
-.bottom-nav .bottom-nav-middle > a {
+header > .bottom-nav .bottom-nav-middle > a {
   display: inline-block;
   line-height: 100px;
   padding: 0  7px;
   color: #333;
   overflow: hidden;
 }
-.bottom-nav .bottom-nav-middle > a:hover > .box {
+header > .bottom-nav .bottom-nav-middle > a:hover > .box {
   height: 230px;
 }
-.bottom-nav .bottom-nav-middle > a:hover {
+header > .bottom-nav .bottom-nav-middle > a:hover {
   color: #ff6700;
 }
-.bottom-nav .bottom-nav-middle > a > .box {
+header > .bottom-nav .bottom-nav-middle > a > .box {
   position: absolute;
   left: 0;
   top: 100px;
   width: 100%;
   height: 0;
+  z-index: 999;
   background-color: #5b7533;
   transition: height 0.5s;
 }
-.bottom-nav .bottom-nav-right {
+header > .bottom-nav .bottom-nav-right {
   float: right;
   line-height: 100px;
 }
-.bottom-nav .bottom-nav-right > form {
+header > .bottom-nav .bottom-nav-right > form {
   margin-top: 25px;
 }
-.bottom-nav .bottom-nav-right input {
+header > .bottom-nav .bottom-nav-right input {
   float: left;
   outline: none;
   border: 1px solid #e0e0e0;
   right: 51px;
-  z-index: 1;
   width: 223px;
   height: 48px;
   padding: 0 10px;
   font-size: 14px;
   line-height: 48px;
 }
-.bottom-nav .bottom-nav-right button {
+header > .bottom-nav .bottom-nav-right button {
   float: right;
   right: 0;
   width: 52px;
@@ -206,27 +245,28 @@
   border: 1px solid #e0e0e0;
   outline: 0;
 }
-header > .main-nav div {
+.banner > .main-nav div {
   height: 460px;
+  z-index: 1;
   background-color: black;
 }
-.top-item {
+.banner > .top-item {
   margin-top: 15px;
   margin-bottom: 20px;
 }
-.top-item > .wrapper {
+.banner > .top-item > .wrapper {
   display: flex;
   height: 170px;
 }
-.top-item .item-1 {
+.banner > .top-item .item-1 {
   width: 234px;
   background-color: #5f5750;
   font-size: 12px;
 }
-.top-item .item-1 li {
+.banner > .top-item .item-1 li {
   float: left;
 }
-.top-item .item-1 li > a {
+.banner > .top-item .item-1 li > a {
   display: block;
   width: 76px;
   height: 67px;
@@ -235,52 +275,52 @@ header > .main-nav div {
   opacity: 0.7;
   transition: opacity 0.2s;
 }
-.top-item .item-1 li > a > div {
+.banner > .top-item .item-1 li > a > div {
   margin-top: 18px;
   font-size: 24px;
   margin-bottom: 5px;
 }
-.top-item .item-1 li > a:hover {
+.banner > .top-item .item-1 li > a:hover {
   opacity: 1;
 }
-.top-item .item-2,
-.top-item .item-3,
-.top-item .item-4 {
+.banner > .top-item .item-2,
+.banner > .top-item .item-3,
+.banner > .top-item .item-4 {
   width: 316px;
   margin-left: 15px;
 }
-.top-item .item-2:hover,
-.top-item .item-3:hover,
-.top-item .item-4:hover {
+.banner > .top-item .item-2:hover,
+.banner > .top-item .item-3:hover,
+.banner > .top-item .item-4:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
-.top-item .item-2 > a,
-.top-item .item-3 > a,
-.top-item .item-4 > a {
+.banner > .top-item .item-2 > a,
+.banner > .top-item .item-3 > a,
+.banner > .top-item .item-4 > a {
   display: block;
 }
-.top-item .item-2 > a > img,
-.top-item .item-3 > a > img,
-.top-item .item-4 > a > img {
+.banner > .top-item .item-2 > a > img,
+.banner > .top-item .item-3 > a > img,
+.banner > .top-item .item-4 > a > img {
   width: 316px;
   height: 170px;
 }
-main {
+.index-main {
   background-color: #f5f5f5;
 }
-main > .mian-quickshop h2 {
+.index-main > .mian-quickshop h2 {
   float: left;
   height: 58px;
   line-height: 58px;
 }
-main > .mian-quickshop .select {
+.index-main > .mian-quickshop .select {
   float: right;
   margin-top: 24px;
 }
-main > .mian-quickshop .select > .left {
+.index-main > .mian-quickshop .select > .left {
   border-right: 0;
 }
-main > .mian-quickshop .select > span {
+.index-main > .mian-quickshop .select > span {
   display: inline-block;
   width: 36px;
   height: 24;
@@ -290,42 +330,42 @@ main > .mian-quickshop .select > span {
   color: #b0b0b0;
   cursor: pointer;
 }
-main > .mian-quickshop .select > span:hover {
+.index-main > .mian-quickshop .select > span:hover {
   color: #ff6700;
 }
-main > .mian-quickshop > .timer {
+.index-main > .mian-quickshop > .timer {
   height: 340px;
   display: flex;
   text-align: center;
 }
-main > .mian-quickshop > .timer > div {
+.index-main > .mian-quickshop > .timer > div {
   margin-left: 14px;
   width: 234px;
   height: 300px;
   padding-top: 39px;
   border-top: 1px solid red;
 }
-main > .mian-quickshop > .timer > .count {
+.index-main > .mian-quickshop > .timer > .count {
   margin-left: 0;
   background: #f1eded;
 }
-main > .mian-quickshop > .timer > .count > div:nth-of-type(1) {
+.index-main > .mian-quickshop > .timer > .count > div:nth-of-type(1) {
   color: #ef3a3b;
   font-size: 21px;
   padding-top: 15px;
 }
-main > .mian-quickshop > .timer > .count > div:nth-of-type(2) {
+.index-main > .mian-quickshop > .timer > .count > div:nth-of-type(2) {
   margin: 25px auto;
 }
-main > .mian-quickshop > .timer > .count > span {
+.index-main > .mian-quickshop > .timer > .count > span {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.54);
 }
-main > .mian-quickshop > .timer > .count > div:nth-of-type(3) {
+.index-main > .mian-quickshop > .timer > .count > div:nth-of-type(3) {
   margin: 28px auto 0;
   font-size: 24px;
 }
-main > .mian-quickshop > .timer > .count > div:nth-of-type(3) > span {
+.index-main > .mian-quickshop > .timer > .count > div:nth-of-type(3) > span {
   display: inline-block;
   width: 46px;
   height: 46px;
@@ -333,21 +373,21 @@ main > .mian-quickshop > .timer > .count > div:nth-of-type(3) > span {
   color: #fff;
   line-height: 46px;
 }
-main > .mian-quickshop > .timer > .product {
+.index-main > .mian-quickshop > .timer > .product {
   background: #fff;
 }
-main > .mian-quickshop > .timer > .product > .content {
+.index-main > .mian-quickshop > .timer > .product > .content {
   display: block;
 }
-main > .mian-quickshop > .timer > .product > .content > .picture {
+.index-main > .mian-quickshop > .timer > .product > .content > .picture {
   margin: 0 auto 22px;
 }
-main > .mian-quickshop > .timer > .product > .content > .picture > img {
+.index-main > .mian-quickshop > .timer > .product > .content > .picture > img {
   width: 160px;
   height: 160px;
   font-size: 0;
 }
-main > .mian-quickshop > .timer > .product > .content > h3 {
+.index-main > .mian-quickshop > .timer > .product > .content > h3 {
   margin: 0 20px 3px;
   font-size: 14px;
   font-weight: 400;
@@ -356,7 +396,7 @@ main > .mian-quickshop > .timer > .product > .content > h3 {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-main > .mian-quickshop > .timer > .product > .content > .desc {
+.index-main > .mian-quickshop > .timer > .product > .content > .desc {
   height: 18px;
   margin: 0 20px 12px;
   font-size: 12px;
@@ -365,63 +405,63 @@ main > .mian-quickshop > .timer > .product > .content > .desc {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-main > .mian-quickshop > .timer > .product > .content > .price {
+.index-main > .mian-quickshop > .timer > .product > .content > .price {
   color: #ff6700;
 }
-main > .mian-quickshop > .timer > .product > .content > .price > del {
+.index-main > .mian-quickshop > .timer > .product > .content > .price > del {
   color: #b0b0b0;
 }
-main > .mian-quickshop > .small-banner {
+.index-main > .mian-quickshop > .small-banner {
   height: 120px;
   margin: 22px 0;
 }
-main > .mian-quickshop > .small-banner > a {
+.index-main > .mian-quickshop > .small-banner > a {
   display: block;
 }
-main > .main-phone > .title {
+.index-main > .main-phone > .title {
   height: 58px;
   line-height: 58px;
 }
-main > .main-phone > .title > h2 {
+.index-main > .main-phone > .title > h2 {
   float: left;
 }
-main > .main-phone > .title > .more {
+.index-main > .main-phone > .title > .more {
   float: right;
 }
-main > .main-phone > .title > .more > a {
+.index-main > .main-phone > .title > .more > a {
   font-size: 16px;
   color: #424242;
 }
-main > .main-phone > .title > .more > a > span {
+.index-main > .main-phone > .title > .more > a > span {
   font-size: 20px;
 }
-main > .main-phone > .title > .more > a:hover {
+.index-main > .main-phone > .title > .more > a:hover {
   color: #ff6700;
 }
-main > .main-phone > .product {
+.index-main > .main-phone > .product {
   height: 614px;
   display: flex;
 }
-main > .main-phone > .product > .left:hover {
+.index-main > .main-phone > .product > .left:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   transform: translate3d(0, -2px, 0);
 }
-main > .main-phone > .product > .left {
+.index-main > .main-phone > .product > .left {
   transition: all 0.5s;
 }
-main > .main-phone > .product > .left > a {
+.index-main > .main-phone > .product > .left > a {
   display: block;
 }
-main > .main-phone > .product > .left > a > img {
+.index-main > .main-phone > .product > .left > a > img {
   width: 234px;
   height: 614px;
 }
-main > .main-phone > .product > .right > ul {
+.index-main > .main-phone > .product > .right > ul {
   display: flex;
   flex-wrap: wrap;
   width: 992px;
 }
-main > .main-phone > .product > .right > ul > li {
+.index-main > .main-phone > .product > .right > ul > li {
   width: 234px;
   height: 260px;
   margin: 0 0 14px 14px;
@@ -430,22 +470,22 @@ main > .main-phone > .product > .right > ul > li {
   background-color: #fff;
   transition: all 0.5s;
 }
-main > .main-phone > .product > .right > ul > li:hover {
+.index-main > .main-phone > .product > .right > ul > li:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   transform: translate3d(0, -2px, 0);
 }
-main > .main-phone > .product > .right > ul > li > a {
+.index-main > .main-phone > .product > .right > ul > li > a {
   display: block;
 }
-main > .main-phone > .product > .right > ul > li > a > .picture {
+.index-main > .main-phone > .product > .right > ul > li > a > .picture {
   margin: 0 auto 18px;
   font-size: 0;
 }
-main > .main-phone > .product > .right > ul > li > a > .picture > img {
+.index-main > .main-phone > .product > .right > ul > li > a > .picture > img {
   width: 160px;
   height: 160px;
 }
-main > .main-phone > .product > .right > ul > li > a > h3 {
+.index-main > .main-phone > .product > .right > ul > li > a > h3 {
   font-weight: 400;
   color: #333;
   margin: 0 10px 2px;
@@ -453,7 +493,7 @@ main > .main-phone > .product > .right > ul > li > a > h3 {
   white-space: nowrap;
   overflow: hidden;
 }
-main > .main-phone > .product > .right > ul > li > a > .desc {
+.index-main > .main-phone > .product > .right > ul > li > a > .desc {
   margin: 0 10px 10px;
   height: 18px;
   font-size: 12px;
@@ -462,103 +502,103 @@ main > .main-phone > .product > .right > ul > li > a > .desc {
   white-space: nowrap;
   overflow: hidden;
 }
-main > .main-phone > .product > .right > ul > li > a > .price {
+.index-main > .main-phone > .product > .right > ul > li > a > .price {
   margin: 0 10px 14px;
   color: #ff6700;
 }
-main > .main-phone > .small-banner {
+.index-main > .main-phone > .small-banner {
   height: 120px;
   margin: 22px 0;
 }
-main > .main-phone > .small-banner > a {
+.index-main > .main-phone > .small-banner > a {
   display: block;
 }
-main > .main-appliances > .title,
-main > .main-smart > .title,
-main > .main-match > .title,
-main > .main-acce > .title,
-main > .main-rim > .title {
+.index-main > .main-appliances > .title,
+.index-main > .main-smart > .title,
+.index-main > .main-match > .title,
+.index-main > .main-acce > .title,
+.index-main > .main-rim > .title {
   height: 58px;
   line-height: 58px;
 }
-main > .main-appliances > .title > h2,
-main > .main-smart > .title > h2,
-main > .main-match > .title > h2,
-main > .main-acce > .title > h2,
-main > .main-rim > .title > h2 {
+.index-main > .main-appliances > .title > h2,
+.index-main > .main-smart > .title > h2,
+.index-main > .main-match > .title > h2,
+.index-main > .main-acce > .title > h2,
+.index-main > .main-rim > .title > h2 {
   float: left;
 }
-main > .main-appliances > .title > .more,
-main > .main-smart > .title > .more,
-main > .main-match > .title > .more,
-main > .main-acce > .title > .more,
-main > .main-rim > .title > .more {
+.index-main > .main-appliances > .title > .more,
+.index-main > .main-smart > .title > .more,
+.index-main > .main-match > .title > .more,
+.index-main > .main-acce > .title > .more,
+.index-main > .main-rim > .title > .more {
   float: right;
 }
-main > .main-appliances > .title > .more > a,
-main > .main-smart > .title > .more > a,
-main > .main-match > .title > .more > a,
-main > .main-acce > .title > .more > a,
-main > .main-rim > .title > .more > a {
+.index-main > .main-appliances > .title > .more > a,
+.index-main > .main-smart > .title > .more > a,
+.index-main > .main-match > .title > .more > a,
+.index-main > .main-acce > .title > .more > a,
+.index-main > .main-rim > .title > .more > a {
   display: inline-block;
   margin: 0 0 0 30px;
   font-size: 16px;
   color: #424242;
 }
-main > .main-appliances > .title > .more > a:hover,
-main > .main-smart > .title > .more > a:hover,
-main > .main-match > .title > .more > a:hover,
-main > .main-acce > .title > .more > a:hover,
-main > .main-rim > .title > .more > a:hover {
+.index-main > .main-appliances > .title > .more > a:hover,
+.index-main > .main-smart > .title > .more > a:hover,
+.index-main > .main-match > .title > .more > a:hover,
+.index-main > .main-acce > .title > .more > a:hover,
+.index-main > .main-rim > .title > .more > a:hover {
   color: #ff6700;
   border-bottom: 1px solid #ff6700;
 }
-main > .main-appliances > .product,
-main > .main-smart > .product,
-main > .main-match > .product,
-main > .main-acce > .product,
-main > .main-rim > .product {
+.index-main > .main-appliances > .product,
+.index-main > .main-smart > .product,
+.index-main > .main-match > .product,
+.index-main > .main-acce > .product,
+.index-main > .main-rim > .product {
   display: flex;
 }
-main > .main-appliances > .product > .left > div,
-main > .main-smart > .product > .left > div,
-main > .main-match > .product > .left > div,
-main > .main-acce > .product > .left > div,
-main > .main-rim > .product > .left > div {
+.index-main > .main-appliances > .product > .left > div,
+.index-main > .main-smart > .product > .left > div,
+.index-main > .main-match > .product > .left > div,
+.index-main > .main-acce > .product > .left > div,
+.index-main > .main-rim > .product > .left > div {
   width: 234px;
   height: 300px;
   margin-bottom: 14px;
   transition: all 0.5s;
 }
-main > .main-appliances > .product > .left > div:hover,
-main > .main-smart > .product > .left > div:hover,
-main > .main-match > .product > .left > div:hover,
-main > .main-acce > .product > .left > div:hover,
-main > .main-rim > .product > .left > div:hover {
+.index-main > .main-appliances > .product > .left > div:hover,
+.index-main > .main-smart > .product > .left > div:hover,
+.index-main > .main-match > .product > .left > div:hover,
+.index-main > .main-acce > .product > .left > div:hover,
+.index-main > .main-rim > .product > .left > div:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   transform: translate3d(0, -2px, 0);
 }
-main > .main-appliances > .product > .left > div > a,
-main > .main-smart > .product > .left > div > a,
-main > .main-match > .product > .left > div > a,
-main > .main-acce > .product > .left > div > a,
-main > .main-rim > .product > .left > div > a {
+.index-main > .main-appliances > .product > .left > div > a,
+.index-main > .main-smart > .product > .left > div > a,
+.index-main > .main-match > .product > .left > div > a,
+.index-main > .main-acce > .product > .left > div > a,
+.index-main > .main-rim > .product > .left > div > a {
   display: block;
 }
-main > .main-appliances > .product > .right > ul,
-main > .main-smart > .product > .right > ul,
-main > .main-match > .product > .right > ul,
-main > .main-acce > .product > .right > ul,
-main > .main-rim > .product > .right > ul {
+.index-main > .main-appliances > .product > .right > ul,
+.index-main > .main-smart > .product > .right > ul,
+.index-main > .main-match > .product > .right > ul,
+.index-main > .main-acce > .product > .right > ul,
+.index-main > .main-rim > .product > .right > ul {
   display: flex;
   flex-wrap: wrap;
   width: 992px;
 }
-main > .main-appliances > .product > .right > ul > li,
-main > .main-smart > .product > .right > ul > li,
-main > .main-match > .product > .right > ul > li,
-main > .main-acce > .product > .right > ul > li,
-main > .main-rim > .product > .right > ul > li {
+.index-main > .main-appliances > .product > .right > ul > li,
+.index-main > .main-smart > .product > .right > ul > li,
+.index-main > .main-match > .product > .right > ul > li,
+.index-main > .main-acce > .product > .right > ul > li,
+.index-main > .main-rim > .product > .right > ul > li {
   width: 234px;
   height: 260px;
   padding: 20px 0;
@@ -567,42 +607,42 @@ main > .main-rim > .product > .right > ul > li {
   text-align: center;
   transition: all 0.5s;
 }
-main > .main-appliances > .product > .right > ul > li:hover,
-main > .main-smart > .product > .right > ul > li:hover,
-main > .main-match > .product > .right > ul > li:hover,
-main > .main-acce > .product > .right > ul > li:hover,
-main > .main-rim > .product > .right > ul > li:hover {
+.index-main > .main-appliances > .product > .right > ul > li:hover,
+.index-main > .main-smart > .product > .right > ul > li:hover,
+.index-main > .main-match > .product > .right > ul > li:hover,
+.index-main > .main-acce > .product > .right > ul > li:hover,
+.index-main > .main-rim > .product > .right > ul > li:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   transform: translate3d(0, -2px, 0);
 }
-main > .main-appliances > .product > .right > ul > li > a,
-main > .main-smart > .product > .right > ul > li > a,
-main > .main-match > .product > .right > ul > li > a,
-main > .main-acce > .product > .right > ul > li > a,
-main > .main-rim > .product > .right > ul > li > a {
+.index-main > .main-appliances > .product > .right > ul > li > a,
+.index-main > .main-smart > .product > .right > ul > li > a,
+.index-main > .main-match > .product > .right > ul > li > a,
+.index-main > .main-acce > .product > .right > ul > li > a,
+.index-main > .main-rim > .product > .right > ul > li > a {
   display: block;
 }
-main > .main-appliances > .product > .right > ul > li > a > .picture,
-main > .main-smart > .product > .right > ul > li > a > .picture,
-main > .main-match > .product > .right > ul > li > a > .picture,
-main > .main-acce > .product > .right > ul > li > a > .picture,
-main > .main-rim > .product > .right > ul > li > a > .picture {
+.index-main > .main-appliances > .product > .right > ul > li > a > .picture,
+.index-main > .main-smart > .product > .right > ul > li > a > .picture,
+.index-main > .main-match > .product > .right > ul > li > a > .picture,
+.index-main > .main-acce > .product > .right > ul > li > a > .picture,
+.index-main > .main-rim > .product > .right > ul > li > a > .picture {
   margin: 0 auto 18px;
   font-size: 0;
 }
-main > .main-appliances > .product > .right > ul > li > a > .picture > img,
-main > .main-smart > .product > .right > ul > li > a > .picture > img,
-main > .main-match > .product > .right > ul > li > a > .picture > img,
-main > .main-acce > .product > .right > ul > li > a > .picture > img,
-main > .main-rim > .product > .right > ul > li > a > .picture > img {
+.index-main > .main-appliances > .product > .right > ul > li > a > .picture > img,
+.index-main > .main-smart > .product > .right > ul > li > a > .picture > img,
+.index-main > .main-match > .product > .right > ul > li > a > .picture > img,
+.index-main > .main-acce > .product > .right > ul > li > a > .picture > img,
+.index-main > .main-rim > .product > .right > ul > li > a > .picture > img {
   width: 160px;
   height: 160px;
 }
-main > .main-appliances > .product > .right > ul > li > a > h3,
-main > .main-smart > .product > .right > ul > li > a > h3,
-main > .main-match > .product > .right > ul > li > a > h3,
-main > .main-acce > .product > .right > ul > li > a > h3,
-main > .main-rim > .product > .right > ul > li > a > h3 {
+.index-main > .main-appliances > .product > .right > ul > li > a > h3,
+.index-main > .main-smart > .product > .right > ul > li > a > h3,
+.index-main > .main-match > .product > .right > ul > li > a > h3,
+.index-main > .main-acce > .product > .right > ul > li > a > h3,
+.index-main > .main-rim > .product > .right > ul > li > a > h3 {
   font-weight: 400;
   color: #333;
   margin: 0 10px 2px;
@@ -610,11 +650,11 @@ main > .main-rim > .product > .right > ul > li > a > h3 {
   white-space: nowrap;
   overflow: hidden;
 }
-main > .main-appliances > .product > .right > ul > li > a > .desc,
-main > .main-smart > .product > .right > ul > li > a > .desc,
-main > .main-match > .product > .right > ul > li > a > .desc,
-main > .main-acce > .product > .right > ul > li > a > .desc,
-main > .main-rim > .product > .right > ul > li > a > .desc {
+.index-main > .main-appliances > .product > .right > ul > li > a > .desc,
+.index-main > .main-smart > .product > .right > ul > li > a > .desc,
+.index-main > .main-match > .product > .right > ul > li > a > .desc,
+.index-main > .main-acce > .product > .right > ul > li > a > .desc,
+.index-main > .main-rim > .product > .right > ul > li > a > .desc {
   margin: 0 10px 10px;
   height: 18px;
   font-size: 12px;
@@ -623,26 +663,26 @@ main > .main-rim > .product > .right > ul > li > a > .desc {
   white-space: nowrap;
   overflow: hidden;
 }
-main > .main-appliances > .product > .right > ul > li > a > .price,
-main > .main-smart > .product > .right > ul > li > a > .price,
-main > .main-match > .product > .right > ul > li > a > .price,
-main > .main-acce > .product > .right > ul > li > a > .price,
-main > .main-rim > .product > .right > ul > li > a > .price {
+.index-main > .main-appliances > .product > .right > ul > li > a > .price,
+.index-main > .main-smart > .product > .right > ul > li > a > .price,
+.index-main > .main-match > .product > .right > ul > li > a > .price,
+.index-main > .main-acce > .product > .right > ul > li > a > .price,
+.index-main > .main-rim > .product > .right > ul > li > a > .price {
   margin: 0 10px 14px;
   color: #ff6700;
 }
-main > .main-appliances > .small-banner,
-main > .main-smart > .small-banner,
-main > .main-match > .small-banner,
-main > .main-acce > .small-banner,
-main > .main-rim > .small-banner {
+.index-main > .main-appliances > .small-banner,
+.index-main > .main-smart > .small-banner,
+.index-main > .main-match > .small-banner,
+.index-main > .main-acce > .small-banner,
+.index-main > .main-rim > .small-banner {
   height: 120px;
   margin: 22px 0;
 }
-main > .main-appliances > .small-banner > a,
-main > .main-smart > .small-banner > a,
-main > .main-match > .small-banner > a,
-main > .main-acce > .small-banner > a,
-main > .main-rim > .small-banner > a {
+.index-main > .main-appliances > .small-banner > a,
+.index-main > .main-smart > .small-banner > a,
+.index-main > .main-match > .small-banner > a,
+.index-main > .main-acce > .small-banner > a,
+.index-main > .main-rim > .small-banner > a {
   display: block;
 }
