@@ -1,3 +1,4 @@
+@charset 'utf-8';
 .top-pic {
   display: block;
   width: 100%;
@@ -80,6 +81,7 @@
   height: 0px;
   background-color: #fff;
   overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   transition: all 0.5s;
 }
 .top-nav .top-nav-car:hover {
