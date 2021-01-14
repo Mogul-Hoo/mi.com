@@ -1,0 +1,173 @@
+@charset 'utf-8';
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  width: 1226px;
+  margin: 0 auto;
+}
+.login-wrapper {
+  width: 1130px;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  font-weight: normal;
+}
+i,
+em {
+  font-style: normal;
+}
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+body {
+  font-size: 14px;
+}
+body {
+  background-color: #f9f9f9;
+}
+.reg-content {
+  width: 786px;
+  height: 522px;
+  padding: 0 34px 30px;
+  margin: 80px auto 0;
+  background-color: #fff;
+}
+.reg-content > .logo {
+  padding-bottom: 40px;
+}
+.reg-content > .logo > div {
+  background: url(https://account.xiaomi.com/static/res/349d9c1/account-static/respassport/acc-2014/img/milogo.png);
+  width: 49px;
+  height: 48px;
+  margin: 0 auto;
+}
+.reg-content > .item {
+  font-size: 30px;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+}
+.reg-content > .regbox {
+  width: 332px;
+  padding: 30px 0;
+  line-height: 20px;
+  margin: 0 auto;
+}
+.reg-content > .regbox > .content > h4 {
+  padding-bottom: 5px;
+  color: #333;
+}
+.reg-content > .regbox > .content > .area {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 14px;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 15px;
+  color: #555;
+  cursor: pointer;
+}
+.reg-content > .regbox > .content > .area > p {
+  float: left;
+  width: 275px;
+  border-right: 1px solid #e8e8e8;
+}
+.reg-content > .regbox > .content > .area > i {
+  float: right;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.reg-content > .regbox > .content > .text {
+  margin-top: -10px;
+  margin-bottom: 15px;
+  color: #666;
+}
+.reg-content > .regbox > .content > .tele {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 14px;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 30px;
+  color: #555;
+}
+.reg-content > .regbox > .content > .tele > div {
+  float: left;
+  width: 54px;
+  height: 40px;
+  border-right: 1px solid #e8e8e8;
+}
+.reg-content > .regbox > .content > .tele > input {
+  float: right;
+  width: 241px;
+  height: 20px;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+}
+.reg-content > .regbox > .content > .btn-reg > input {
+  display: block;
+  background-color: #ff6700;
+  color: #fff;
+  width: 330px;
+  height: 42px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+}
+.reg-content > .regbox > .content > .btn-reg > input:hover {
+  background-color: #ff936a;
+}
+.reg-content > .msg {
+  text-align: center;
+  padding-top: 40px;
+  color: #9d9d9d;
+}
+.reg-content > .msg > div {
+  padding: 10px 0 ;
+  cursor: pointer;
+}
+.reg-content > .msg > div > a {
+  color: #333;
+  font-weight: 900;
+}
+.bottom {
+  padding-top: 100px;
+  text-align: center;
+  color: #757575;
+  font-size: 14px;
+}
+.bottom > div > a {
+  display: inline-block;
+  padding: 0 10px;
+  color: #757575;
+}
+.bottom > div > a:hover {
+  color: #333;
+}
+.bottom > p {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
