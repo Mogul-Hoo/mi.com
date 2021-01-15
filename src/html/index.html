@@ -5,9 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小米商城</title>
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../iconfont/iconfont.css">
     <script src="../js/index.js" type="module"></script>
+    <link rel="stylesheet" href="../package/swiper-bundle.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+        
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -38,7 +69,7 @@
                     <span>|</span>
                     <a href="#" class="download-app">下载app
                         <div class="pic">
-                            <img class="lazy"data-original="https://i1.mifile.cn/f/i/17/appdownload/download.png?1" alt="">
+                            <img src="https://i1.mifile.cn/f/i/17/appdownload/download.png?1" alt="">
                             小米商城APP
                         </div>
                     </a>
@@ -67,85 +98,54 @@
                     <a href="#"></a>
                 </div>
                 <div class="bottom-nav-middle">
-                    <a href="#">小米手机
-                        <div class="box miphone">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                    <div>
+                        <a href="#">小米手机</a>
+                        <div class="box">
+                            这里是二级导航
                         </div>
-                    </a>
-                    <a href="#">Redmi 红米
-                        <div class="box Redmi">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                    </div>
+                    <div>
+                        <a href="#">Redmi 红米</a>
+                        <div class="box">
+                            这里是二级导航
                         </div>
-                    </a>
-                    <a href="#">电视
-                        <div class="box TV">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                    </div>
+                    <div>
+                        <a href="#">电视</a>
+                        <div class="box">
+                            这里是二级导航
                         </div>
-                    </a>
-                    <a href="#">笔记本
-                        <div class="box notebook">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                    </div>
+                    <div>
+                        <a href="#">笔记本</a>
+                        <div class="box">
+                            这里是二级导航
                         </div>
-                    </a>
-                    <a href="#">家电
-                        <div class="box home">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                    </div>
+                    <div>
+                        <a href="#">家电</a>
+                        <div class="box">
+                            这里是二级导航
                         </div>
-                    </a>
-                    <a href="#">路由器
-                        <div class="box rout">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                    </div>
+                    <div>
+                        <a href="#">路由器</a>
+                        <div class="box">
+                            这里是二级导航
                         </div>
-                    </a>
-                    <a href="#">智能硬件
-                        <div class="box machine">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                    </div>
+                    <div>
+                        <a href="#">智能硬件</a>
+                        <div class="box">
+                            这里是二级导航
                         </div>
-                    </a>
-                    <a href="#">服务</a>
-                    <a href="#">社区</a>
+                    </div>
+                    <div>
+                        <a href="#">服务</a>
+                    </div>
+                    <div>
+                        <a href="#">社区</a>
+                    </div>
                 </div>
                 <div class="bottom-nav-right">
                     <form action="#" name="shopping-car" class="clear">
@@ -159,7 +159,85 @@
     </header>
     <div class="banner">
         <div class="main-nav">
-            <div class="wrapper"></div>
+            <div class="wrapper">
+                <div class="left-list">
+                    <ul>
+                        <li>
+                            <a href="#">手机 电话卡<span>&gt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">电视 盒子<span>&gt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">笔记本 显示器<span>&gt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">家电 插线板<span>&gt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">出行 穿戴<span>&gt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">智能 路由器<span>&gt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">电源 配件<span>&gt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">健康 儿童<span>&gt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">耳机 音箱<span>&gt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">生活 箱包<span>&gt</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1acdc8c5e49afede6d6b75ed32568b22.jpg?thumb=1&w=1226&h=460&f=webp&q=90)"></div>
+                        <div class="swiper-slide" style="background-image:url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0ef4160c861b998239bce9adb82341e7.jpg?thumb=1&w=1226&h=460&f=webp&q=90)"></div>
+                        <div class="swiper-slide" style="background-image:url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ed12ea68287caf5fa7807449f9a4f5b7.jpg?thumb=1&w=1226&h=460&f=webp&q=90)"></div>
+                        <div class="swiper-slide" style="background-image:url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/91e8be56a21db1b399fd25bfffe85bcc.jpeg?thumb=1&w=1226&h=460&f=webp&q=90)"></div>
+                        <div class="swiper-slide" style="background-image:url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c57abbc9b9e06aa5ca23715b569d4c6c.jpg?w=2452&h=920)"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="../package/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        spaceBetween: 30,
+                        effect: 'fade',
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    });
+                </script>
+            </div>
         </div>
         <div class="top-item">
             <div class="wrapper">
@@ -1100,7 +1178,138 @@
 
         </div>
     </main>
-    <!-- <script src="../js/tuupola-jquery_lazyload/jquery-1.11.0.min.js"></script>
+    <footer>
+        <div class="wrapper">
+            <!-- 底部导航信息 -->
+            <ul class="footer-nav">
+                <li>
+                    <a href=""><span class="glyphicon glyphicon-wrench"></span>预约维修服务</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span class="glyphicon glyphicon-wrench"></span>预约维修服务</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span class="glyphicon glyphicon-wrench"></span>预约维修服务</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span class="glyphicon glyphicon-wrench"></span>预约维修服务</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span class="glyphicon glyphicon-wrench"></span>预约维修服务</a
+              >
+            </li>
+          </ul>
+          <div class="info-list">
+            <!-- 底部列表 -->
+            <div class="info">
+              <dl>
+                <dt class="big">帮助中心</dt>
+                <dd>账户管理</dd>
+                <dd>购物指南</dd>
+                <dd>订单操作</dd>
+              </dl>
+              <dl>
+                <dt class="big">服务支持</dt>
+                <dd>售后政策</dd>
+                <dd>自助服务</dd>
+                <dd>相关下载</dd>
+              </dl>
+              <dl>
+                <dt class="big">线下门店</dt>
+                <dd>小米之家</dd>
+                <dd>服务网点</dd>
+                <dd>授权体验店</dd>
+              </dl>
+              <dl>
+                <dt class="big">关于小米</dt>
+                <dd>了解小米</dd>
+                <dd>加入小米</dd>
+                <dd>投资者关系</dd>
+                <dd>企业社会责任</dd>
+                <dd>廉洁举报</dd>
+              </dl>
+              <dl>
+                <dt class="big">关注我们</dt>
+                <dd>新浪微博</dd>
+                <dd>官方微信</dd>
+                <dd>联系我们</dd>
+                <dd>公益基金会</dd>
+              </dl>
+              <dl>
+                <dt class="big">特色服务</dt>
+                <dd>F 码通道</dd>
+                <dd>礼物码</dd>
+                <dd>防伪查询</dd>
+              </dl>
+            </div>
+            <!-- 客服信息 -->
+            <div class="info2">
+              <p>400-100-5678</p>
+              <span>仅收市话费</span>
+              <div>
+                <a href="">
+                  <span class="glyphicon glyphicon-envelope"></span>人工客服
+                </a>
+        </div>
+        <span>关注小米<span class="glyphicon glyphicon-print"></span
+                ><span class="glyphicon glyphicon-align-right"></span
+              ></span>
+        </div>
+        </div>
+        <!-- 底部logo+信息 -->
+        <div class="about">
+            <div class="ft-logo">
+                <a href=""></a>
+            </div>
+            <p class="text1">
+                <a href="">小米商城</a> | <a href="">MIUI</a>|<a href=""> 米家</a> |
+                <a href="">米聊</a> | <a href="">多看</a> | <a href="">游戏</a> |
+                <a href="">政企服务</a> | <a href="">小米天猫店</a> |
+                <a href="">小米集团隐私政策</a> |
+                <a href="">小米公司儿童信息保护规则</a> |
+                <a href="">小米商城隐私政策</a> | <a href="">小米商城用户协议</a> |
+                <a href="">问题反馈</a> | <a href="">Select Location</a
+              ><a href="">北京互联网法院法律服务工作站</a> |
+                <a href="">中国消费者协会</a> | <a href="">北京市消费者协会</a
+              ><br />
+              © mi.com 京ICP证110507号 京ICP备10046444号
+              京公网安备11010802020134号 京网文[2020]0276-042号<br />
+              （京）网械平台备字（2018）第00005号 互联网药品信息服务资格证
+              (京)-非经营性-2014-0090 营业执照 医疗器械质量公告<br />
+              增值电信业务许可证 网络食品经营备案 京食药网食备202010048
+              食品经营许可证<br />
+              违法和不良信息举报电话：171-5104-4404 知识产权侵权投诉
+              本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- <div id="fix-bar">
+        <ul class="sm">
+          <a href=""><li class="iconfont icon-shouji"></li></a>
+                <a href="">
+                    <li class="iconfont icon-yonghu"></li>
+                </a>
+                <a href="">
+                    <li class="iconfont icon-ermai"></li>
+                </a>
+                <a href="">
+                    <li class="iconfont icon-editor2"></li>
+                </a>
+                <a href="">
+                    <li class="iconfont icon-dilanxianxingiconyihuifu_huabanfuben"></li>
+                </a>
+                </ul>
+        </div> -->
+        <!-- <script src="../js/tuupola-jquery_lazyload/jquery-1.11.0.min.js"></script>
     <script src="../js/tuupola-jquery_lazyload/jquery.lazyload.min.js"></script>
     <script type="text/javascript" charset="utf-8">
         $(function() {

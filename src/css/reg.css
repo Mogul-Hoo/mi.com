@@ -119,9 +119,9 @@ body {
 }
 .reg-content > .regbox > .content > .tele > input {
   float: right;
+  padding: 10px;
   width: 241px;
   height: 20px;
-  padding: 10px;
   border: 0;
   outline: 0;
 }

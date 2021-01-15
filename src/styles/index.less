@@ -1,13 +1,45 @@
 @charset 'utf-8';
 
 @import "./reset.less";
-@import "./header.less";
-@import "./footer.less";
+// @import "./header.less";
+.banner{
+    background-color: #fff;
+}
 .banner>.main-nav{
-    & div{
+    &>div{
         height: 460px;
         z-index: 1;
-        background-color:black;
+        display: flex;
+        &>.left-list{
+            width: 230px;
+            height: 420px;
+            padding: 20px 0;
+            background-color:#333;
+            background: rgba(105,101,101,.6);
+            & li{
+                width: 200px;
+                height: 42px;
+                padding-left: 30px;
+                transition: all 0.2s;
+                &:hover{
+                    background-color: #ff6700;
+                }
+                & a{
+                    display: inline-block;
+                    color: #fff;
+                    height: 42px;
+                    line-height: 42px;
+                    width: 170px;
+                    position: relative;
+                    span{
+                        position: absolute;
+                        right: 15px;
+                        font-size: 16px;
+                    }
+                }
+                
+            }
+        }
     }
 }
 .banner>.top-item{
@@ -23,7 +55,7 @@
         background-color: #5f5750;
         font-size: 12px;
         & li{
-            float: left;
+            float:left;
             &>a{
                 display: block;
                 width: 76px;
@@ -372,3 +404,4 @@
         }
     }
 }
+// @import "./footer.less";

@@ -10,61 +10,63 @@
 </head>
 
 <body>
-    <div class="logo login-wrapper">
-        <div class="bg-mi">
-            <a href="./index.html"></a>
+    <form action="../../interface/login.php" method="POST">
+        <div class="logo login-wrapper">
+            <div class="bg-mi">
+                <a href="./index.html"></a>
+            </div>
         </div>
-    </div>
-    <main class="login-main">
-        <div class="login-wrapper">
-            <div class="main-content">
-                <div class="tabs">
-                    <a href="#" id="login">账号登录</a>
-                    <span class="line"></span>
-                    <a href="#" id="qr">扫码登录</a>
-                </div>
-                <div class="tabs-cn">
-                    <div>
-                        <label for="" class="login-area">
-                            <form action="#" method="get" name="login">
-                                <input type="text" name="user" id="username" placeholder="邮箱/手机号码/小米ID">
+        <main class="login-main">
+            <div class="login-wrapper">
+                <div class="main-content">
+                    <div class="tabs">
+                        <a href="#" id="login">账号登录</a>
+                        <span class="line"></span>
+                        <a href="#" id="qr">扫码登录</a>
+                    </div>
+                    <div class="tabs-cn">
+                        <div>
+                            <label for="" class="login-area">
+                            <!-- <form action="#" method="get" name="login"> -->
+                                <input type="text" name="phone" id="username" placeholder="邮箱/手机号码/小米ID">
                                 <input type="password" placeholder="密码" id="pwd" name="password">
-                            </form>
+                            <!-- </form> -->
                         </label>
-                        <label for="" class="btn-area">
-                            <input type="button" value="登录" id="login-button">
+                            <label for="" class="btn-area">
+                            <input type="submit" value="登录" id="login-button">
                         </label>
+                        </div>
                     </div>
-                </div>
-                <div class="other">
-                    <div class="text">
-                        <a href="#">手机短信登录注册</a>
-                    </div>
-                    <div class="reg">
-                        <a href="#">立即注册</a>
-                        <span> ｜ </span>
-                        <a href="#">忘记密码？</a>
-                    </div>
-                    <div class="bottom">
-                        <a href="#" class="iconfont">&#xe608;</a>
-                        <a href="#" class="iconfont">&#xe608;</a>
-                        <a href="#" class="iconfont">&#xe63e;</a>
-                        <a href="#" class="iconfont">&#xe63e;</a>
+                    <div class="other">
+                        <div class="text">
+                            <a href="#">手机短信登录注册</a>
+                        </div>
+                        <div class="reg">
+                            <a href="./reg.html">立即注册</a>
+                            <span> ｜ </span>
+                            <a href="#">忘记密码？</a>
+                        </div>
+                        <div class="bottom">
+                            <a href="#" class="iconfont">&#xe608;</a>
+                            <a href="#" class="iconfont">&#xe608;</a>
+                            <a href="#" class="iconfont">&#xe63e;</a>
+                            <a href="#" class="iconfont">&#xe63e;</a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </main>
+        <div class="bottom">
+            <div>
+                <a href="#">简体</a>｜
+                <a href="#">繁体</a>｜
+                <a href="#">English</a>｜
+                <a href="#">常见问题</a>｜
+                <a href="#">隐私政策</a>
+            </div>
+            <p>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
         </div>
-    </main>
-    <div class="bottom">
-        <div>
-            <a href="#">简体</a>｜
-            <a href="#">繁体</a>｜
-            <a href="#">English</a>｜
-            <a href="#">常见问题</a>｜
-            <a href="#">隐私政策</a>
-        </div>
-        <p>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
-    </div>
+    </form>
 </body>
 
 </html>

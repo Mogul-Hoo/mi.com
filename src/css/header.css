@@ -156,6 +156,7 @@ header > .bottom-nav {
   height: 100px;
   font-size: 16px;
   position: relative;
+  background-color: #fff;
 }
 header > .bottom-nav .bottom-nav-left {
   float: left;
@@ -195,29 +196,54 @@ header > .bottom-nav .bottom-nav-left > a:hover::after {
 header > .bottom-nav .bottom-nav-middle {
   float: left;
   margin-left: 190px;
-}
-header > .bottom-nav .bottom-nav-middle > a {
-  display: inline-block;
-  line-height: 100px;
-  padding: 0  7px;
-  color: #333;
+  height: 100px;
+  padding-left: 40px;
   overflow: hidden;
 }
-header > .bottom-nav .bottom-nav-middle > a:hover > .box {
-  height: 230px;
+header > .bottom-nav .bottom-nav-middle > div {
+  display: inline-block;
+  height: 100px;
+  padding: 0  7px;
 }
-header > .bottom-nav .bottom-nav-middle > a:hover {
+header > .bottom-nav .bottom-nav-middle > div > a {
+  color: #333;
+  display: block;
+  height: 100px;
+  line-height: 100px;
+}
+header > .bottom-nav .bottom-nav-middle > div > a:hover {
   color: #ff6700;
 }
-header > .bottom-nav .bottom-nav-middle > a > .box {
+header > .bottom-nav .bottom-nav-middle > div:hover > .box {
+  height: 230px;
+}
+header > .bottom-nav .bottom-nav-middle > div > .box {
   position: absolute;
   left: 0;
   top: 100px;
   width: 100%;
-  height: 0;
+  height: 0px;
   z-index: 999;
-  background-color: #5b7533;
+  padding: 0 100px;
+  overflow: hidden;
+  background-color: #fff;
   transition: height 0.5s;
+}
+header > .bottom-nav .bottom-nav-middle > div > .box > a {
+  display: inline-block;
+}
+header > .bottom-nav .bottom-nav-middle > div > .box > a img {
+  width: 160px;
+  height: 110px;
+  border: 0;
+}
+header > .bottom-nav .bottom-nav-middle > div > .box > a .desc {
+  color: #333;
+  text-align: center;
+}
+header > .bottom-nav .bottom-nav-middle > div > .box > a .price {
+  color: #ff6700;
+  text-align: center;
 }
 header > .bottom-nav .bottom-nav-right {
   float: right;

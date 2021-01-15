@@ -42,217 +42,42 @@ em {
 body {
   font-size: 14px;
 }
-header > .top-pic {
-  display: block;
-  width: 100%;
-  height: 120px;
-  background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bb3c06a430689ba2357dd7d1fbfa6bab.jpg?w=5120&h=240);
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: auto 120px;
-  text-indent: -9999px;
-}
-header > .top-nav {
-  height: 40px;
-  width: 100%;
-  line-height: 40px;
-  background-color: #333;
-  font-size: 12px;
-  text-align: center;
-  color: #b0b0b0;
-}
-header > .top-nav a {
-  color: #b0b0b0;
-}
-header > .top-nav .top-nav-left {
-  float: left;
-  height: 40px;
-}
-header > .top-nav .top-nav-left > a {
-  display: inline-block;
-}
-header > .top-nav .top-nav-left > a:hover {
-  color: #fff;
-}
-header > .top-nav .top-nav-left > span {
-  margin: 0.25em;
-  color: #424242;
-}
-header > .top-nav .top-nav-left > .download-app {
-  position: relative;
-}
-header > .top-nav .top-nav-left > .download-app > .pic {
-  background-color: #fff;
-  position: absolute;
-  top: 40px;
-  left: -37px;
-  width: 124px;
-  color: #333;
-  font-size: 14px;
-  overflow: hidden;
-  box-shadow: 0 1px 5px #aaa;
-  height: 0px;
-  transition: all 0.3s;
-}
-header > .top-nav .top-nav-left > .download-app > .pic > img {
-  display: block;
-  width: 90px;
-  height: 90px;
-  margin: 18px auto 5px;
-}
-header > .top-nav .top-nav-left > .download-app:hover > .pic {
-  z-index: 20;
-  height: 153px;
-}
-header > .top-nav .top-nav-car {
-  position: relative;
-  float: right;
-  width: 120px;
-  height: 40px;
-  background-color: #424242;
-  margin-left: 20px;
-}
-header > .top-nav .top-nav-car > a {
-  display: block;
-  color: #fff;
-}
-header > .top-nav .top-nav-car > .shop {
-  position: absolute;
-  top: 40px;
-  right: 0;
-  width: 316px;
-  height: 0px;
-  background-color: #fff;
-  overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-  transition: all 0.5s;
-}
-header > .top-nav .top-nav-car:hover {
+.banner {
   background-color: #fff;
 }
-header > .top-nav .top-nav-car:hover > a {
-  color: #ff6700;
-}
-header > .top-nav .top-nav-car:hover > .shop {
-  z-index: 20;
-  height: 100px;
-}
-header > .top-nav .top-nav-right {
-  float: right;
-  font-size: 12px;
-  height: 40px;
-}
-header > .top-nav .top-nav-right > a {
-  display: inline-block;
-}
-header > .top-nav .top-nav-right > a:hover {
-  color: #fff;
-}
-header > .top-nav .top-nav-right > span {
-  margin: 0.25em;
-  color: #424242;
-}
-header > .bottom-nav {
-  height: 100px;
-  font-size: 16px;
-  position: relative;
-}
-header > .bottom-nav .bottom-nav-left {
-  float: left;
-  margin-top: 22px;
-}
-header > .bottom-nav .bottom-nav-left > a {
-  display: block;
-  width: 55px;
-  height: 55px;
-  background-color: #ff6700;
-  position: relative;
-  overflow: hidden;
-}
-header > .bottom-nav .bottom-nav-left > a::before,
-header > .bottom-nav .bottom-nav-left > a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 55px;
-  height: 55px;
-  transition: all 0.2s;
-}
-header > .bottom-nav .bottom-nav-left > a::before {
-  background: url(https://s02.mifile.cn/assets/static/image/mi-logo.png) no-repeat 50% 50%;
-}
-header > .bottom-nav .bottom-nav-left > a::after {
-  background: url(https://s02.mifile.cn/assets/static/image/mi-home.png) no-repeat 50% 50%;
-  margin-left: -55px;
-}
-header > .bottom-nav .bottom-nav-left > a:hover::before {
-  margin-left: 55px;
-}
-header > .bottom-nav .bottom-nav-left > a:hover::after {
-  margin-left: 0;
-}
-header > .bottom-nav .bottom-nav-middle {
-  float: left;
-  margin-left: 190px;
-}
-header > .bottom-nav .bottom-nav-middle > a {
-  display: inline-block;
-  line-height: 100px;
-  padding: 0  7px;
-  color: #333;
-  overflow: hidden;
-}
-header > .bottom-nav .bottom-nav-middle > a:hover > .box {
-  height: 230px;
-}
-header > .bottom-nav .bottom-nav-middle > a:hover {
-  color: #ff6700;
-}
-header > .bottom-nav .bottom-nav-middle > a > .box {
-  position: absolute;
-  left: 0;
-  top: 100px;
-  width: 100%;
-  height: 0;
-  z-index: 999;
-  background-color: #5b7533;
-  transition: height 0.5s;
-}
-header > .bottom-nav .bottom-nav-right {
-  float: right;
-  line-height: 100px;
-}
-header > .bottom-nav .bottom-nav-right > form {
-  margin-top: 25px;
-}
-header > .bottom-nav .bottom-nav-right input {
-  float: left;
-  outline: none;
-  border: 1px solid #e0e0e0;
-  right: 51px;
-  width: 223px;
-  height: 48px;
-  padding: 0 10px;
-  font-size: 14px;
-  line-height: 48px;
-}
-header > .bottom-nav .bottom-nav-right button {
-  float: right;
-  right: 0;
-  width: 52px;
-  height: 48px;
-  font-size: 24px;
-  line-height: 24px;
-  background-color: #fff;
-  color: #616161;
-  border: 1px solid #e0e0e0;
-  outline: 0;
-}
-.banner > .main-nav div {
+.banner > .main-nav > div {
   height: 460px;
   z-index: 1;
-  background-color: black;
+  display: flex;
+}
+.banner > .main-nav > div > .left-list {
+  width: 230px;
+  height: 420px;
+  padding: 20px 0;
+  background-color: #333;
+  background: rgba(105, 101, 101, 0.6);
+}
+.banner > .main-nav > div > .left-list li {
+  width: 200px;
+  height: 42px;
+  padding-left: 30px;
+  transition: all 0.2s;
+}
+.banner > .main-nav > div > .left-list li:hover {
+  background-color: #ff6700;
+}
+.banner > .main-nav > div > .left-list li a {
+  display: inline-block;
+  color: #fff;
+  height: 42px;
+  line-height: 42px;
+  width: 170px;
+  position: relative;
+}
+.banner > .main-nav > div > .left-list li a span {
+  position: absolute;
+  right: 15px;
+  font-size: 16px;
 }
 .banner > .top-item {
   margin-top: 15px;

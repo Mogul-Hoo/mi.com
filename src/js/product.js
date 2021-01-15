@@ -52,7 +52,7 @@ $.ajax({
             <div class="selected-box">
                 <div class="selected">
                     <span class="title">${res.title}</span>
-                    <i>2999<em>元</em></i>
+                    <i>${res.price}<em>元</em></i>
                 </div>
                 <div class="total-price">
                     总计：
@@ -61,7 +61,7 @@ $.ajax({
             </div>
             <div class="btns">
                 <div class="add-btn">
-                    <a href="#">加入购物车</a>
+                    <a href="./shopcar.html" id="addItem">加入购物车</a>
                 </div>
                 <div class="add-favorite">
                     <a href="#">喜欢</a>
