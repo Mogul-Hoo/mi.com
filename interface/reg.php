@@ -26,6 +26,8 @@
     // 执行查询操作
     $resuslt = $mysqli->query($sql);
 
+    $res = $mysqli->close();
+
     // 结果集中的 num_rows 属性是查询数据的结果个数
     // 通过判断 num_rows 可以知道是否查询到数据
     // var_dump($resuslt);
